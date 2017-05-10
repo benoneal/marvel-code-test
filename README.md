@@ -23,4 +23,4 @@ Code-wise, I probably bit off more than I could easily chew in a few hours after
 - nothing has tests
 - designing as I code is not my favourite thing, and it shows
 
-Finally, the actions, routes, and styling patterns in here are simply the way I prefer to code such things. They are using libraries I created specifically to address my preferences. At work I use more popular/idiomatic approaches, because speed, power, and convenience aren't as important as shared understanding in that environment. 
+Finally, the actions, routes, and styling patterns in here are simply the way I prefer to code such things. They are using libraries I created specifically to address my preferences (freyja: styles, sleipnir: state, naglfar: routing, and fenris: isomorphism). At work I use more popular/idiomatic approaches, because speed, power, and convenience aren't as important as shared understanding in that environment. 
