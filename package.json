@@ -1,0 +1,67 @@
+{
+  "name": "marvel-code-test",
+  "title": "Marvel Code Test",
+  "version": "1.0.0",
+  "description": "Marvel API code test",
+  "main": "index.js",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benoneal/marvel-code-test.git"
+  },
+  "keywords": [
+    "react",
+    "isomorphic",
+    "universal",
+    "express",
+    "routing",
+    "server",
+    "redux",
+    "fenris",
+    "sleipnir",
+    "naglfar"
+  ],
+  "author": "Ben O'Neal <ben_oneal@insight.games>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benoneal/marvel-code-test/issues"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development npm run build:dev && concurrently --kill-others \"npm run watch:dev\" \"npm start\"",
+    "prod": "cross-env NODE_ENV=production npm run build:prod && npm start",
+    "watch:dev": "webpack --watch",
+    "build:dev": "webpack --progress",
+    "build:prod": "webpack -p --progress",
+    "start": "node dist/server"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-react-jsx-self": "^6.22.0",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babili-webpack-plugin": "^0.0.11",
+    "concurrently": "^3.4.0",
+    "cross-env": "^4.0.0",
+    "favicons-webpack-plugin": "^0.0.7",
+    "fenris": "^1.0.1",
+    "file-loader": "^0.11.1",
+    "freyja": "^1.0.0",
+    "md5": "^2.2.1",
+    "raw-loader": "^0.5.1",
+    "react": "^15.5.4",
+    "react-helmet": "^5.0.3",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "source-map-support": "^0.4.14",
+    "webpack": "^2.4.1",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-transform": "^2.0.2",
+    "del": "^2.2.2",
+    "react-transform-hmr": "^1.0.4"
+  }
+}
